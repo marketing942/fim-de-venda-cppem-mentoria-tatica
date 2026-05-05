@@ -54,7 +54,7 @@ export function ProgressBar({ completed, total }: ProgressBarProps) {
         {allDone && (
           <p className="mt-3 text-sm text-green-300/80 leading-relaxed">
             Tudo certo! Agora você já está pronto para iniciar sua jornada no
-            Plano de Combate Supremo.
+            Plano de Combate Tático.
           </p>
         )}
       </div>
