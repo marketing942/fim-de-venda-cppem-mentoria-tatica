@@ -19,7 +19,7 @@ const STEPS: Step[] = [
   },
   {
     id: 2,
-    title: "Entre no Grupo VIP do Supremo",
+    title: "Entre no Grupo VIP do Tático",
     description:
       "Acesse o grupo VIP oficial da Mentoria Plano de Combate Tático. Esse será um dos canais importantes para avisos, direcionamentos e acompanhamento da sua preparação.",
     buttonLabel: "Entrar no Grupo VIP",
