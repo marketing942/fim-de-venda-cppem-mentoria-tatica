@@ -15,7 +15,7 @@ export function Header() {
           />
         </div>
         <span className="hidden sm:block text-xs text-slate-500 font-medium tracking-widest uppercase">
-          Plano de Combate Supremo
+          Plano de Combate Tático
         </span>
       </div>
     </header>
