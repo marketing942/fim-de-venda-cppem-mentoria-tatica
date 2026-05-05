@@ -8,7 +8,7 @@ export function Footer() {
           <span className="w-8 h-px bg-gradient-to-l from-transparent to-green-500/30" />
         </div>
         <p className="text-slate-600 text-xs sm:text-sm">
-          © 2026 CPPEM Concursos Públicos | Plano de Combate Supremo
+          © 2026 CPPEM Concursos Públicos | Plano de Combate Tático
         </p>
         <p className="text-slate-700 text-xs mt-1 italic">
           Seu sonho, nosso objetivo.
