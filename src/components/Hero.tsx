@@ -7,7 +7,7 @@ export function Hero() {
       <div className="flex justify-center mb-6">
         <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-[rgba(34,197,94,0.35)] bg-[rgba(34,197,94,0.08)] text-green-400 text-xs font-semibold tracking-widest uppercase">
           <ShieldCheck size={13} className="shrink-0" />
-          CPPEM Concursos · Mentoria Plano de Combate Supremo
+          CPPEM Concursos · Mentoria Plano de Combate Tático
         </span>
       </div>
 
