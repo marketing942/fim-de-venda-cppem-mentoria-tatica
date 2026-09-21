@@ -14,7 +14,7 @@ const STEPS: Step[] = [
     description:
       "Complete o pré-cadastro para que nossa equipe organize seus dados e acompanhe corretamente sua entrada na Mentoria Plano de Combate Supremo.",
     buttonLabel: "Preencher formulário",
-    link: "https://cppem.notion.site/3e2bbae8074c804d9d8ce4a2e149731a?pvs=105",
+    link: "https://links.cppem.com.br/cppem-pre-cadastro-tutory",
     badge: "Obrigatório",
   },
   {
