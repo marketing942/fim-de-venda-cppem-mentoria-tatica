@@ -6,7 +6,7 @@ export function Header() {
       <div className="max-w-4xl mx-auto px-4 py-4 flex items-center justify-between">
         <div className="flex items-center gap-3">
           <Image
-            src="https://raw.githubusercontent.com/marketing942/fotos-dos-bots/main/LOGO%20CPPEM.png"
+            src="/logo-cppem.png"
             alt="CPPEM Concursos"
             width={140}
             height={50}
