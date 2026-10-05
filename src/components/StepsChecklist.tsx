@@ -31,7 +31,7 @@ const STEPS: Step[] = [
     description:
       "Este é o link oficial de acesso à plataforma da mentoria. Deixe salvo nos favoritos do seu navegador para acessar sempre que precisar.",
     buttonLabel: "Acessar plataforma",
-    link: "https://mentoriaexito.tutory.com.br/login.php",
+    link: "https://plataforma.cppem.com.br",
     highlight: (
       <>
         <span className="font-semibold text-green-300">Guarde esse link.</span>{" "}
