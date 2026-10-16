@@ -1,89 +1,36 @@
-# CPPEM Concursos — Próximos Passos | Plano de Combate Supremo
+# CPPEM Concursos — Próximos Passos | Plano de Combate Tático
 
-Página pós-compra da Mentoria Plano de Combate Supremo do CPPEM Concursos.  
-Centraliza os próximos passos do aluno com checklist interativa e persistência via localStorage.
+Página pós-compra da Mentoria Plano de Combate Tático do CPPEM Concursos, com a mesma identidade visual da Central de Ajuda
+(dourado sobre preto, Oxanium / Rajdhani / Inter, brasas animadas, emblema do leão).
 
-## Stack
+## Tecnologias
 
-- Next.js 16 (App Router)
-- TypeScript
-- Tailwind CSS v4
-- lucide-react
-- Vercel (deploy)
+- **Next.js 14** (App Router) + **TypeScript**
+- CSS próprio em `src/app/globals.css`
+- **lucide-react** (ícones) e **localStorage** (progresso da checklist)
 
----
-
-## Instalação e uso local
-
-### 1. Instalar dependências
+## Rodar localmente
 
 ```bash
 npm install
+npm run dev      # http://localhost:3000
+npm run build && npm run start
 ```
 
-### 2. Rodar localmente
+Deploy: Vercel (importar o repositório, sem configuração extra e sem variáveis de ambiente).
 
-```bash
-npm run dev
-```
+## Estrutura da página
 
-Acesse [http://localhost:3000](http://localhost:3000) no navegador.
+1. **Hero** — parabéns + convite para começar o passo 1
+2. **Próximos passos** — 5 passos em linha do tempo, cada um com "como fazer" numerado
+3. **Atendimento** — assistente virtual 24h e suporte ao aluno (mesmos da Central de Ajuda)
+4. **Rodapé** — redes sociais, botão da Central de Ajuda e link para o cppem.com.br
 
-### 3. Build de produção (opcional)
+## Onde editar
 
-```bash
-npm run build
-npm start
-```
+- **Nome do plano e link do Grupo VIP:** `src/lib/plan.ts`
+- **Passos e links:** `STEPS` em `src/app/components/ChecklistSection.tsx`
+- **Canais de suporte e link da Central de Ajuda:** `src/lib/contact.ts`
+- **Redes sociais:** `SOCIAL_LINKS` em `src/app/components/social-icons.tsx`
 
----
-
-## Deploy na Vercel
-
-### Opção 1 — Via CLI da Vercel
-
-```bash
-npm install -g vercel
-vercel
-```
-
-Siga as instruções do terminal. Na primeira vez ele vai pedir login e configuração do projeto.
-
-### Opção 2 — Via dashboard da Vercel
-
-1. Acesse [vercel.com](https://vercel.com) e faça login.
-2. Clique em **Add New Project**.
-3. Importe o repositório do GitHub.
-4. Clique em **Deploy** — a Vercel detecta automaticamente o Next.js.
-
-Nenhuma variável de ambiente é necessária.
-
----
-
-## Estrutura de componentes
-
-```
-src/
-├── app/
-│   ├── globals.css        # Tema escuro + variáveis CSS
-│   ├── layout.tsx         # Layout raiz com metadata
-│   └── page.tsx           # Página principal
-├── components/
-│   ├── Header.tsx         # Logo e cabeçalho sticky
-│   ├── Hero.tsx           # Seção de boas-vindas
-│   ├── ProgressBar.tsx    # Barra de progresso (X de 5 passos)
-│   ├── StepCard.tsx       # Card individual de cada passo
-│   ├── StepsChecklist.tsx # Gerenciamento de estado + localStorage
-│   ├── SupportCard.tsx    # Card opcional de suporte
-│   └── Footer.tsx         # Rodapé institucional
-```
-
----
-
-## Funcionamento da checklist
-
-- O estado dos passos é salvo no `localStorage` com a chave `cppem-supremo-steps-v1`.
-- Ao clicar no botão de um passo, ele é marcado como concluído e o link externo (quando houver) é aberto em nova aba.
-- O botão "Refazer checklist" limpa o progresso salvo.
-- A barra de progresso conta apenas os 5 passos obrigatórios (suporte não é contabilizado).
-- O componente `StepsChecklist` usa `"use client"` para evitar erros de hidratação — o localStorage só é acessado após montagem no cliente.
+O progresso é salvo no `localStorage` (chave `cppem-<plano>-steps-v2`).
