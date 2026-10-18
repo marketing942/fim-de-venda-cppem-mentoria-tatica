@@ -22,7 +22,7 @@ Deploy: Vercel (importar o repositório, sem configuração extra e sem variáve
 ## Estrutura da página
 
 1. **Hero** — parabéns + convite para começar o passo 1
-2. **Próximos passos** — 5 passos em linha do tempo, cada um com "como fazer" numerado
+2. **Próximos passos** — 4 passos em linha do tempo, cada um com "como fazer" numerado
 3. **Atendimento** — assistente virtual 24h e suporte ao aluno (mesmos da Central de Ajuda)
 4. **Rodapé** — redes sociais, botão da Central de Ajuda e link para o cppem.com.br
 

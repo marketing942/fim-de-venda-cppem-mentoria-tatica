@@ -12,7 +12,7 @@ export default function Hero() {
         </h1>
         <p className="hero-copy">
           Agora você faz parte da elite do CPPEM. Você escolheu caminhar com direção, acompanhamento e estratégia.
-          Para acessar sua mentoria e iniciar a preparação da forma correta, siga os <strong>5 passos rápidos</strong> abaixo,
+          Para acessar sua mentoria e iniciar a preparação da forma correta, siga os <strong>4 passos rápidos</strong> abaixo,
           um de cada vez.
         </p>
         <a className="gold-button" href="#passos">

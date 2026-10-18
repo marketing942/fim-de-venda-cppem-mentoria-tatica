@@ -10,31 +10,21 @@ const STORAGE_KEY = `cppem-${PLAN.slug}-steps-v2`;
 const STEPS = [
   {
     number: 1,
-    title: "Preencha o formulário inicial",
-    description: `Complete o pré-cadastro para que nossa equipe organize seus dados e acompanhe corretamente sua entrada na Mentoria ${PLAN.name}.`,
+    title: "Confira o e-mail da sua compra",
+    description:
+      "Sua liberação é automática: o acesso chega no mesmo e-mail que você cadastrou na hora da compra. Confira se ele já chegou.",
     howTo: [
-      "Clique no botão abaixo: o formulário abre em uma nova aba.",
-      "Preencha todos os campos com atenção.",
-      "Envie o formulário e volte para esta página.",
+      "Abra o e-mail que você usou na hora da compra.",
+      "Pesquise por “CPPEM” na caixa de entrada, no spam ou em promoções.",
+      "Encontrou o acesso? Volte aqui e clique em “Já conferi meu e-mail”.",
+      "Não chegou? Fale com a nossa equipe pelos canais de atendimento no fim desta página.",
     ],
-    buttonLabel: "Preencher formulário",
-    href: "https://links.cppem.com.br/cppem-pre-cadastro-tutory",
+    buttonLabel: "Já conferi meu e-mail",
+    href: undefined,
     badge: "Obrigatório",
   },
   {
     number: 2,
-    title: "Entre no Grupo VIP",
-    description: `Acesse o grupo VIP oficial da Mentoria ${PLAN.name}. Esse será um dos canais importantes para avisos, direcionamentos e acompanhamento da sua preparação.`,
-    howTo: [
-      "Clique no botão abaixo para abrir o grupo.",
-      "Entre no grupo VIP da sua mentoria.",
-      "Fique de olho nos avisos: é por lá que os direcionamentos são enviados.",
-    ],
-    buttonLabel: "Entrar no Grupo VIP",
-    href: PLAN.vipLink,
-  },
-  {
-    number: 3,
     title: "Salve o link da plataforma",
     description:
       "Este é o link oficial de acesso à plataforma da mentoria. Deixe salvo nos favoritos do seu navegador para acessar sempre que precisar.",
@@ -47,19 +37,19 @@ const STEPS = [
     href: "https://plataforma.cppem.com.br",
   },
   {
-    number: 4,
-    title: "Encontre seu acesso no e-mail",
-    description: "Você recebeu o link de acesso no mesmo e-mail cadastrado na hora da compra.",
+    number: 3,
+    title: "Entre no Grupo VIP",
+    description: `Acesse o grupo VIP oficial da Mentoria ${PLAN.name}. Esse será um dos canais importantes para avisos, direcionamentos e acompanhamento da sua preparação.`,
     howTo: [
-      "Abra o e-mail que você usou na hora da compra.",
-      "Pesquise por “CPPEM” na caixa de entrada, no spam ou em promoções.",
-      "Encontrou? Volte aqui e clique em “Já conferi meu e-mail”.",
+      "Clique no botão abaixo para abrir o grupo.",
+      "Entre no grupo VIP da sua mentoria.",
+      "Fique de olho nos avisos: é por lá que os direcionamentos são enviados.",
     ],
-    buttonLabel: "Já conferi meu e-mail",
-    href: undefined,
+    buttonLabel: "Entrar no Grupo VIP",
+    href: PLAN.vipLink,
   },
   {
-    number: 5,
+    number: 4,
     title: "Assista ao vídeo de uso da plataforma",
     description:
       "Veja o vídeo explicando como utilizar a plataforma corretamente, acessar seus conteúdos e iniciar sua preparação sem dificuldade.",
