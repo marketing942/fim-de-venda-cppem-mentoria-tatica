@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Oxanium, Rajdhani } from "next/font/google";
-import { EmberField } from "./components/ember-field";
+import { Crosshair } from "./components/crosshair";
 import { SiteHeader } from "./components/SiteHeader";
 import { SiteFooter } from "./components/SiteFooter";
 import { PLAN } from "@/lib/plan";
@@ -26,11 +26,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="pt-BR" className={`${inter.variable} ${oxanium.variable} ${rajdhani.variable}`}>
       <body>
         <div className="page-shell" id="topo">
-          <EmberField />
           <SiteHeader />
           <main>{children}</main>
           <SiteFooter />
         </div>
+        <Crosshair />
       </body>
     </html>
   );
