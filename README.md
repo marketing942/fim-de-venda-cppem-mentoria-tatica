@@ -23,14 +23,14 @@ Deploy: Vercel (importar o repositório, sem configuração extra e sem variáve
 
 1. **Hero** — parabéns + convite para começar o passo 1
 2. **Próximos passos** — 4 passos em linha do tempo, cada um com "como fazer" numerado
-3. **Atendimento** — assistente virtual 24h e suporte ao aluno (mesmos da Central de Ajuda)
+3. **Atendimento** — suporte ao aluno pelo WhatsApp (mesmo da Central de Ajuda)
 4. **Rodapé** — redes sociais, botão da Central de Ajuda e link para o cppem.com.br
 
 ## Onde editar
 
 - **Nome do plano e link do Grupo VIP:** `src/lib/plan.ts`
 - **Passos e links:** `STEPS` em `src/app/components/ChecklistSection.tsx`
-- **Canais de suporte e link da Central de Ajuda:** `src/lib/contact.ts`
+- **Canal de suporte e link da Central de Ajuda:** `src/lib/contact.ts`
 - **Redes sociais:** `SOCIAL_LINKS` em `src/app/components/social-icons.tsx`
 
 O progresso é salvo no `localStorage` (chave `cppem-<plano>-steps-v2`).
